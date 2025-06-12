@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.png" type="image/png">
+  <title>DVIR Pre-Trip App</title>
+</head>
+<body style="margin:0">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpVjHaXn0vXc3wBScIv7rdQYxC4pG7eyadbjNNaqRrRjm-BA/viewform?embedded=true"
+          width="100%" height="100%" style="border:none; height:100vh;"></iframe>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+  </script>
+</body>
+</html>
